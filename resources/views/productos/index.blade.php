@@ -12,11 +12,13 @@
 </head>
 <body>
 
-    <div class="container-fluid h-100">
-        <div class="row w-100">
-            <div class="col">
+
+    <div class="container w-75 bg-primary mt-1 rounded shadow ">
+        <div class="row align-items-stretch">
+            <div class="col bg-white p-5 rounded-end">
                 <a href="{{ route('productos.create') }}" class="btn btn-primary">Agregar producto</a>
                 <!--Se hace referencia a la ruta de nobre productos.create-->
+
             </div>
         </div>
     </div>
