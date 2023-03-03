@@ -31,5 +31,7 @@ Route::get('/productos/edit', function () {
 /*Vista create de productos*/
 Route::get('/productos/create', function () {
     return view('productos.create');
-});
+}) -> name('productos.create'); /* Use name para ponerle nombre a la ruta y poder hacer referencia a ella */
+
+
 

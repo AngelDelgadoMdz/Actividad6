@@ -11,11 +11,12 @@
     <title>Vista del producto</title>
 </head>
 <body>
-    
+
     <div class="container-fluid h-100">
         <div class="row w-100">
             <div class="col">
-                <button class="btn btn-danger center-block"> A regular button </button>
+                <a href="{{ route('productos.create') }}" class="btn btn-primary">Agregar producto</a>
+                <!--Se hace referencia a la ruta de nobre productos.create-->
             </div>
         </div>
     </div>
