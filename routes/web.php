@@ -14,12 +14,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
-});
+});*/
 
 /*Vista index de productos*/
-Route::get('/productos/index', function () {
+Route::get('/', function () {
     return view('productos.index');
 });
 
