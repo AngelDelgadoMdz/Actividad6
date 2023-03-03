@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +17,19 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+/*Vista index de productos*/
+Route::get('/productos/index', function () {
+    return view('productos.index');
+});
+
+/*Vista edit de productos*/
+Route::get('/productos/edit', function () {
+    return view('productos.edit');
+});
+
+/*Vista create de productos*/
+Route::get('/productos/create', function () {
+    return view('productos.create');
+});
+

@@ -7,6 +7,6 @@
     <title>Vista del producto</title>
 </head>
 <body>
-    
+    Página principal de productos
 </body>
 </html>

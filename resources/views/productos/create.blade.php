@@ -7,6 +7,6 @@
     <title>Creación de nuevos productos</title>
 </head>
 <body>
-    
+    Creación de productos
 </body>
 </html>
