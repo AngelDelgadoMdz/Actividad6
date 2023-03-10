@@ -10,9 +10,9 @@ class ProductoController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index() /**Esta es la clase index que usaré para la ruta */
     {
-        //
+        return view('productos.index');
     }
 
     /**
@@ -20,8 +20,14 @@ class ProductoController extends Controller
      */
     public function create()
     {
-        //
+        return view('productos.create');
     }
+
+    public function edit()
+    {
+        return view('productos.edit');
+    }
+
 
     /**
      * Store a newly created resource in storage.
@@ -39,13 +45,13 @@ class ProductoController extends Controller
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Producto $producto)
-    {
-        //
-    }
+    // /**
+    //  * Show the form for editing the specified resource.
+    //  */
+    // public function edit(Producto $producto)
+    // {
+    //     //
+    // }
 
     /**
      * Update the specified resource in storage.

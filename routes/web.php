@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductoController;
 
 
 /*
@@ -18,20 +19,25 @@ use Illuminate\Support\Facades\Route;
     return view('welcome');
 });*/
 
-/*Vista index de productos*/
-Route::get('/', function () {
-    return view('productos.index');
-});
+// /*Vista index de productos*/
+// Route::get('/', function () {
+//     return view('productos.index');
+// });
 
-/*Vista edit de productos*/
-Route::get('/productos/edit', function () {
-    return view('productos.edit');
-});
+// /*Vista edit de productos*/
+// Route::get('/productos/edit', function () {
+//     return view('productos.edit');
+// });
 
-/*Vista create de productos*/
-Route::get('/productos/create', function () {
-    return view('productos.create');
-}) -> name('productos.create'); /* Use name para ponerle nombre a la ruta y poder hacer referencia a ella */
+// /*Vista create de productos*/
+// Route::get('/productos/create', function () {
+//     return view('productos.create');
+// }) -> name('productos.create'); /* Use name para ponerle nombre a la ruta y poder hacer referencia a ella */
+
+Route::get('/producto', [ProductoController::class, 'index']); /*Ruta usando la función index dentro del controlador*/
+Route::get('/producto/edit', [ProductoController::class, 'edit']);
+Route::get('/producto/create', [ProductoController::class, 'create']);
+
 
 
 
